@@ -1,7 +1,13 @@
-array = [ "jean.dupont.01@gmail.com"]
-
-
-array.times do |array|
-	puts array
-	array=array+1
+puts "Combien d'emails veux tu envoyer"
+mail=gets.chomp.to_i
+i=1
+while (i<=mail)
+if i<10
+	puts "jean.dupont.0#{i}@email.fr"
 end
+if i>10
+	puts "jean.dupont.#{i}@email.fr"
+end
+i=i+1
+end
+
